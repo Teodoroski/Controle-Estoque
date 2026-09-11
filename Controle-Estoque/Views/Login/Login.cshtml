@@ -1,0 +1,25 @@
+﻿@model Controle_Estoque.Models.Usuario
+
+@{
+    ViewData["Title"] = "Login";
+}
+
+<h1 align="center" class="display-3">Login</h1>
+
+<div align="center">
+    <form asp-controller="Login" asp-action="Login" method="POST">
+    
+       <div class="col-form-label">
+          <label asp-for="Nome">Nome: </label>
+          <input asp-for="Nome" />
+      </div>
+    
+       <div class="col-form-label">
+           <label asp-for="Senha">Senha: </label>
+            <input asp-for="Senha" type="password" />
+        </div>
+    
+        <button type="submit">Entrar</button>
+        <a asp-action="Cadastrar">Cadastrar-se</a>
+    </form>
+</div>
