@@ -229,3 +229,4 @@ D:\Visual-Studio-Projects\source\repos\Controle-Estoque\Controle-Estoque\bin\Deb
 D:\Visual-Studio-Projects\source\repos\Controle-Estoque\Controle-Estoque\bin\Debug\net10.0\runtimes\win-x86\native\msalruntime_x86.dll
 D:\Visual-Studio-Projects\source\repos\Controle-Estoque\Controle-Estoque\obj\Debug\net10.0\Controle-Estoque.csproj.AssemblyReference.cache
 D:\Visual-Studio-Projects\source\repos\Controle-Estoque\Controle-Estoque\obj\Debug\net10.0\Controle.91E5039F.Up2Date
+D:\Visual-Studio-Projects\source\repos\Controle-Estoque\Controle-Estoque\obj\Debug\net10.0\Controle-Estoque.sourcelink.json

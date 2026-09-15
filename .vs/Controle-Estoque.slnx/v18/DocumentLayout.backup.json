@@ -3,32 +3,12 @@
   "WorkspaceRootPath": "D:\\Visual-Studio-Projects\\source\\repos\\Controle-Estoque\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D0BD085D-11F4-5E4E-02B8-F6F808A3BAF8}|Controle-Estoque\\Controle-Estoque.csproj|d:\\visual-studio-projects\\source\\repos\\controle-estoque\\controle-estoque\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D0BD085D-11F4-5E4E-02B8-F6F808A3BAF8}|Controle-Estoque\\Controle-Estoque.csproj|solutionrelative:controle-estoque\\views\\login\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0BD085D-11F4-5E4E-02B8-F6F808A3BAF8}|Controle-Estoque\\Controle-Estoque.csproj|d:\\visual-studio-projects\\source\\repos\\controle-estoque\\controle-estoque\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0BD085D-11F4-5E4E-02B8-F6F808A3BAF8}|Controle-Estoque\\Controle-Estoque.csproj|solutionrelative:controle-estoque\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0BD085D-11F4-5E4E-02B8-F6F808A3BAF8}|Controle-Estoque\\Controle-Estoque.csproj|d:\\visual-studio-projects\\source\\repos\\controle-estoque\\controle-estoque\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0BD085D-11F4-5E4E-02B8-F6F808A3BAF8}|Controle-Estoque\\Controle-Estoque.csproj|solutionrelative:controle-estoque\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D0BD085D-11F4-5E4E-02B8-F6F808A3BAF8}|Controle-Estoque\\Controle-Estoque.csproj|d:\\visual-studio-projects\\source\\repos\\controle-estoque\\controle-estoque\\controllers\\estoquecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0BD085D-11F4-5E4E-02B8-F6F808A3BAF8}|Controle-Estoque\\Controle-Estoque.csproj|solutionrelative:controle-estoque\\controllers\\estoquecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D0BD085D-11F4-5E4E-02B8-F6F808A3BAF8}|Controle-Estoque\\Controle-Estoque.csproj|d:\\visual-studio-projects\\source\\repos\\controle-estoque\\controle-estoque\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D0BD085D-11F4-5E4E-02B8-F6F808A3BAF8}|Controle-Estoque\\Controle-Estoque.csproj|solutionrelative:controle-estoque\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0BD085D-11F4-5E4E-02B8-F6F808A3BAF8}|Controle-Estoque\\Controle-Estoque.csproj|d:\\visual-studio-projects\\source\\repos\\controle-estoque\\controle-estoque\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0BD085D-11F4-5E4E-02B8-F6F808A3BAF8}|Controle-Estoque\\Controle-Estoque.csproj|solutionrelative:controle-estoque\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0BD085D-11F4-5E4E-02B8-F6F808A3BAF8}|Controle-Estoque\\Controle-Estoque.csproj|d:\\visual-studio-projects\\source\\repos\\controle-estoque\\controle-estoque\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D0BD085D-11F4-5E4E-02B8-F6F808A3BAF8}|Controle-Estoque\\Controle-Estoque.csproj|solutionrelative:controle-estoque\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0BD085D-11F4-5E4E-02B8-F6F808A3BAF8}|Controle-Estoque\\Controle-Estoque.csproj|d:\\visual-studio-projects\\source\\repos\\controle-estoque\\controle-estoque\\views\\login\\cadastrar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{D0BD085D-11F4-5E4E-02B8-F6F808A3BAF8}|Controle-Estoque\\Controle-Estoque.csproj|solutionrelative:controle-estoque\\views\\login\\cadastrar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,84 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Usuario.cs",
-              "DocumentMoniker": "D:\\Visual-Studio-Projects\\source\\repos\\Controle-Estoque\\Controle-Estoque\\Models\\Usuario.cs",
-              "RelativeDocumentMoniker": "Controle-Estoque\\Models\\Usuario.cs",
-              "ToolTip": "D:\\Visual-Studio-Projects\\source\\repos\\Controle-Estoque\\Controle-Estoque\\Models\\Usuario.cs",
-              "RelativeToolTip": "Controle-Estoque\\Models\\Usuario.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAArAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "EstoqueController.cs",
+              "DocumentMoniker": "D:\\Visual-Studio-Projects\\source\\repos\\Controle-Estoque\\Controle-Estoque\\Controllers\\EstoqueController.cs",
+              "RelativeDocumentMoniker": "Controle-Estoque\\Controllers\\EstoqueController.cs",
+              "ToolTip": "D:\\Visual-Studio-Projects\\source\\repos\\Controle-Estoque\\Controle-Estoque\\Controllers\\EstoqueController.cs",
+              "RelativeToolTip": "Controle-Estoque\\Controllers\\EstoqueController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-11T18:31:07.565Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Visual-Studio-Projects\\source\\repos\\Controle-Estoque\\Controle-Estoque\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Controle-Estoque\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\Visual-Studio-Projects\\source\\repos\\Controle-Estoque\\Controle-Estoque\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Controle-Estoque\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-11T18:28:20.28Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\Visual-Studio-Projects\\source\\repos\\Controle-Estoque\\Controle-Estoque\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controle-Estoque\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\Visual-Studio-Projects\\source\\repos\\Controle-Estoque\\Controle-Estoque\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controle-Estoque\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-11T18:27:12.908Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Visual-Studio-Projects\\source\\repos\\Controle-Estoque\\Controle-Estoque\\Program.cs",
-              "RelativeDocumentMoniker": "Controle-Estoque\\Program.cs",
-              "ToolTip": "D:\\Visual-Studio-Projects\\source\\repos\\Controle-Estoque\\Controle-Estoque\\Program.cs",
-              "RelativeToolTip": "Controle-Estoque\\Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-11T18:21:49.862Z",
+              "WhenOpened": "2026-09-14T19:02:09.818Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "D:\\Visual-Studio-Projects\\source\\repos\\Controle-Estoque\\Controle-Estoque\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "Controle-Estoque\\Controllers\\LoginController.cs",
-              "ToolTip": "D:\\Visual-Studio-Projects\\source\\repos\\Controle-Estoque\\Controle-Estoque\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "Controle-Estoque\\Controllers\\LoginController.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAAB8AAABHAAAAAAAAAA==",
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Visual-Studio-Projects\\source\\repos\\Controle-Estoque\\Controle-Estoque\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controle-Estoque\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Visual-Studio-Projects\\source\\repos\\Controle-Estoque\\Controle-Estoque\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controle-Estoque\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-11T18:09:23.462Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "D:\\Visual-Studio-Projects\\source\\repos\\Controle-Estoque\\Controle-Estoque\\Views\\Login\\Login.cshtml",
-              "RelativeDocumentMoniker": "Controle-Estoque\\Views\\Login\\Login.cshtml",
-              "ToolTip": "D:\\Visual-Studio-Projects\\source\\repos\\Controle-Estoque\\Controle-Estoque\\Views\\Login\\Login.cshtml",
-              "RelativeToolTip": "Controle-Estoque\\Views\\Login\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-11T17:49:33.265Z",
+              "WhenOpened": "2026-09-14T19:01:47.097Z",
               "EditorCaption": ""
             },
             {
@@ -133,19 +61,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Cadastrar.cshtml",
-              "DocumentMoniker": "D:\\Visual-Studio-Projects\\source\\repos\\Controle-Estoque\\Controle-Estoque\\Views\\Login\\Cadastrar.cshtml",
-              "RelativeDocumentMoniker": "Controle-Estoque\\Views\\Login\\Cadastrar.cshtml",
-              "ToolTip": "D:\\Visual-Studio-Projects\\source\\repos\\Controle-Estoque\\Controle-Estoque\\Views\\Login\\Cadastrar.cshtml",
-              "RelativeToolTip": "Controle-Estoque\\Views\\Login\\Cadastrar.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-11T17:34:37.51Z",
-              "EditorCaption": ""
             }
           ]
         }

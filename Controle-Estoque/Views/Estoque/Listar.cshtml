@@ -1,3 +1,25 @@
-﻿@{
+﻿@model IEnumerable<Controle_Estoque.Models.Produto>
+
+@{
     ViewData["Title"] = "Listar";
 }
+
+<h1>Produtos em estoque:</h1>
+
+<table>
+    <thead>
+        <th>@Html.DisplayNameFor(model => model.Nome)</th>
+        <th>@Html.DisplayNameFor(model => model.Quantidade)</th>
+        <th>@Html.DisplayNameFor(model => model.Preco)</th>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+     <tr>
+        <td>@Html.DisplayNameFor(model => item.Nome)</td>
+        <td>@Html.DisplayNameFor(model => item.Quantidade)</td>
+        <td>@Html.DisplayNameFor(model => item.Preco)</td>
+    </tr>
+    }
+    </tbody>
+</table>
