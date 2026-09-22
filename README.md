@@ -8,3 +8,4 @@
   - Editar
   - Listar
   - Deletar
+- Banco de Dados tanto para salvar os usuários e os produtos do estoque.
