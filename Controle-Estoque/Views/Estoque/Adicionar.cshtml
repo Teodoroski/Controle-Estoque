@@ -1,0 +1,28 @@
+﻿@model Controle_Estoque.Models.Produto
+
+@{
+    ViewData["Title"] = "Adicionar Produto";
+    Layout = "_EstoqueLayout";
+}
+
+<h1>Adicionar produto</h1>
+
+<div>
+<form asp-action="AdicionarProduto" asp-controller="Estoque" method="POST">
+    <div>
+        <label asp-for="Nome">Nome Produto:</label>
+        <input asp-for="Nome" />
+    </div>
+
+    <div>
+        <label asp-for="Quantidade">Quantidade: </label>
+        <input asp-for="Quantidade"/>
+    </div>
+    <div>
+        <label asp-for="Preco">Preço: </label>
+        <input asp-for="Preco"/>
+    </div>
+
+    <button type="submit">Enviar</button>
+</form>
+</div>

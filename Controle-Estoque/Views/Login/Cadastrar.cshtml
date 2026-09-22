@@ -2,27 +2,29 @@
 
 @{
     ViewData["Title"] = "Cadastrar";
+    Layout = "_LoginLayout";
 }
 
-<h1 align="center" class="display-3">Cadastrar-se</h1>
+<div class="login-box">
+<h1>Cadastrar-se</h1>
 
-<div align="center">
     <form asp-action="Cadastrar" asp-controller="Login" method="POST">
-        <div class="col-form-label">
+        <div>
             <label asp-for="Nome">Nome: </label>
             <input asp-for="Nome"/>
         </div>
 
-        <div class="col-form-label">
+        <div>
             <label asp-for="Email">Email: </label>
             <input asp-for="Email" type="email"/>
         </div>
-        <div class ="col-form-label">
+
+        <div>
             <label asp-for="Senha">Senha: </label>
             <input asp-for="Senha" type="Senha"/>
         </div>
 
         <button type="submit">Cadastrar</button>
-        <a asp-action="Login">Login</a>
     </form>
+    <p><a asp-action="Login">Voltar para página de Login</a></p>
 </div>

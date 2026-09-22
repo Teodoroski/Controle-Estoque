@@ -2,24 +2,29 @@
 
 @{
     ViewData["Title"] = "Listar";
+    Layout = "_EstoqueLayout";
 }
-
-<h1>Produtos em estoque:</h1>
-
-<table>
-    <thead>
-        <th>@Html.DisplayNameFor(model => model.Nome)</th>
-        <th>@Html.DisplayNameFor(model => model.Quantidade)</th>
-        <th>@Html.DisplayNameFor(model => model.Preco)</th>
-    </thead>
-    <tbody>
-    @foreach (var item in Model)
-    {
-     <tr>
-        <td>@Html.DisplayNameFor(model => item.Nome)</td>
-        <td>@Html.DisplayNameFor(model => item.Quantidade)</td>
-        <td>@Html.DisplayNameFor(model => item.Preco)</td>
-    </tr>
-    }
-    </tbody>
-</table>
+<header><h1 align="center">Produtos em estoque</h1></header>
+<main>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Id)</th>
+                <th>@Html.DisplayNameFor(model => model.Nome)</th>
+                <th>@Html.DisplayNameFor(model => model.Quantidade)</th>
+                <th>@Html.DisplayNameFor(model => model.Preco)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayNameFor(model => item.Id)</td>
+                    <td>@Html.DisplayNameFor(model => item.Nome)</td>
+                    <td>@Html.DisplayNameFor(model => item.Quantidade)</td>
+                    <td>@Html.DisplayNameFor(model => item.Preco)</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</main>

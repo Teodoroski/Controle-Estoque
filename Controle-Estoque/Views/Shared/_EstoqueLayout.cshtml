@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Title"] - Controle Estoque</title>
+    <link rel="stylesheet" href="~/css/siteEstoque.css" />
+</head>
+<body>
+    <div class="layout">
+
+        <!-- ========================= -->
+        <!-- BARRA LATERAL ESQUERDA -->
+        <!-- ========================= -->
+
+        <aside class="sidebar">
+
+            <!-- LOGO / NOME DO SISTEMA -->
+            <div class="logo">
+                <div class="logo-icon">
+                    📦
+                </div>
+                <h2>
+                    Controle de Estoque
+                </h2>
+            </div>
+
+            <!-- MENU -->
+
+            <nav class="menu">
+                <a asp-controller="Home"
+                   asp-action="Index"
+                   class="menu-item">
+                    <span class="menu-icon">🏠</span>
+                    <span>Início</span>
+                </a>
+
+
+                <a asp-controller="Estoque"
+                   asp-action="Listar"
+                   class="menu-item">
+                    <span class="menu-icon">📦</span>
+                    <span>Estoque</span>
+                </a>
+
+                <a href="#"
+                   class="menu-item">
+                    <span class="menu-icon">📊</span>
+                    <span>Relatórios</span>
+                </a>
+            </nav>
+
+            <!-- SAIR -->
+
+            <div class="sidebar-bottom">
+
+                <a asp-controller="Login"
+                   asp-action="Login"
+                   class="logout">
+                    <span class="menu-icon">🚪</span>
+                    <span>Sair</span>
+                </a>
+            </div>
+        </aside>
+
+
+
+        <!-- ========================= -->
+        <!-- ÁREA PRINCIPAL -->
+        <!-- ========================= -->
+
+        <div class="main">
+            <!-- ========================= -->
+            <!-- BARRA SUPERIOR -->
+            <!-- ========================= -->
+
+            <header class="topbar">
+
+                <div class="page-title">
+                    <span class="menu-button">
+                        ☰
+                    </span>
+                    <h3>
+                        @ViewData["Title"]
+                    </h3>
+                </div>
+            </header>
+
+            <!-- ========================= -->
+            <!-- CONTEÚDO DA PÁGINA -->
+            <!-- ========================= -->
+
+            <main class="content">
+                @RenderBody()
+            </main>
+        </div>
+
+        <!-- ========================= -->
+        <!-- BARRA LATERAL DIREITA -->
+        <!-- ========================= -->
+        <aside class="rightbar">
+            <!-- TÍTULO -->
+
+            <div class="rightbar-title">
+                <span class="rightbar-icon">
+                    ⚙️
+                </span>
+                <h3>
+                    Ações
+                </h3>
+            </div>
+
+            <!-- ADICIONAR -->
+            <a asp-controller="Estoque"
+               asp-action="Adicionar"
+               class="acao adicionar">
+
+                <span class="acao-icon">
+                    ➕
+                </span>
+
+                <span class="acao-text">
+                    Adicionar Produto
+                </span>
+
+            </a>
+
+            <!-- ATUALIZAR -->
+            <a asp-controller="Estoque"
+               asp-action="Editar"
+               class="acao atualizar">
+
+                <span class="acao-icon">
+                    ✏️
+                </span>
+
+                <span class="acao-text">
+                    Atualizar Produto
+                </span>
+
+            </a>
+
+            <!-- DELETAR -->
+
+            <a asp-controller="Estoque"
+               asp-action="Deletar"
+               class="acao deletar">
+                <span class="acao-icon">
+                    🗑️
+                </span>
+                <span class="acao-text">
+                    Deletar Produto
+                </span>
+
+            </a>
+        </aside>
+    </div>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

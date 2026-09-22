@@ -31,6 +31,18 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 10.0
 build_property.EnableCodeStyleSeverity = 
 
+[D:/Visual-Studio-Projects/source/repos/Controle-Estoque/Controle-Estoque/Views/Estoque/Adicionar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0b3F1ZVxBZGljaW9uYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual-Studio-Projects/source/repos/Controle-Estoque/Controle-Estoque/Views/Estoque/Deletar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0b3F1ZVxEZWxldGFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual-Studio-Projects/source/repos/Controle-Estoque/Controle-Estoque/Views/Estoque/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0b3F1ZVxFZGl0YXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Visual-Studio-Projects/source/repos/Controle-Estoque/Controle-Estoque/Views/Estoque/Listar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0b3F1ZVxMaXN0YXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -53,6 +65,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/Visual-Studio-Projects/source/repos/Controle-Estoque/Controle-Estoque/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual-Studio-Projects/source/repos/Controle-Estoque/Controle-Estoque/Views/Shared/_EstoqueLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Fc3RvcXVlTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual-Studio-Projects/source/repos/Controle-Estoque/Controle-Estoque/Views/Shared/_LayoutSite.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRTaXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Visual-Studio-Projects/source/repos/Controle-Estoque/Controle-Estoque/Views/Shared/_LoginLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/Visual-Studio-Projects/source/repos/Controle-Estoque/Controle-Estoque/Views/Shared/_ValidationScriptsPartial.cshtml]

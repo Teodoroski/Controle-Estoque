@@ -230,3 +230,5 @@ D:\Visual-Studio-Projects\source\repos\Controle-Estoque\Controle-Estoque\bin\Deb
 D:\Visual-Studio-Projects\source\repos\Controle-Estoque\Controle-Estoque\obj\Debug\net10.0\Controle-Estoque.csproj.AssemblyReference.cache
 D:\Visual-Studio-Projects\source\repos\Controle-Estoque\Controle-Estoque\obj\Debug\net10.0\Controle.91E5039F.Up2Date
 D:\Visual-Studio-Projects\source\repos\Controle-Estoque\Controle-Estoque\obj\Debug\net10.0\Controle-Estoque.sourcelink.json
+D:\Visual-Studio-Projects\source\repos\Controle-Estoque\Controle-Estoque\obj\Debug\net10.0\compressed\b4znh8rnv0-{0}-r4ef2wt17q-r4ef2wt17q.gz
+D:\Visual-Studio-Projects\source\repos\Controle-Estoque\Controle-Estoque\obj\Debug\net10.0\compressed\q7ue647uuh-{0}-bpaqtuk3ry-bpaqtuk3ry.gz
