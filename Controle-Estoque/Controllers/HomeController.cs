@@ -11,9 +11,6 @@ namespace Controle_Estoque.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            string? nome = HttpContext.Session.GetString("NomeUsuario");
-
-            ViewBag.nome = nome;
             return View();
         }
 
