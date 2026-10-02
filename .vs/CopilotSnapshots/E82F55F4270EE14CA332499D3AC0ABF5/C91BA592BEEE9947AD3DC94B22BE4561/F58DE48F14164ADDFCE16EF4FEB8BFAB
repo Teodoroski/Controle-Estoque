@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Controle_Estoque.Models.Produto>
+
+@{
+    ViewData["Title"] = "Listar";
+    Layout = "_EstoqueLayout";
+}
+<header><h1 align="center">Produtos em estoque</h1></header>
+<main>
+    <style>
+        .custom-table { border-collapse: collapse; }
+        .custom-table th, .custom-table td { border: 1px solid #000; }
+        .table-wrapper { display:flex; justify-content:center; align-items:center; min-height:50vh; }
+    </style>
+    <div class="table-wrapper">
+        <table class="table custom-table table-sm">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Id)</th>
+                <th>@Html.DisplayNameFor(model => model.Nome)</th>
+                <th>@Html.DisplayNameFor(model => model.Quantidade)</th>
+                <th>@Html.DisplayNameFor(model => model.Preco)</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.Nome</td>
+                    <td>@item.Quantidade</td>
+                    <td>@item.Preco</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</main>

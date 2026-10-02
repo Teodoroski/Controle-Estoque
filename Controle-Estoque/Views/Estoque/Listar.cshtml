@@ -1,30 +1,73 @@
-﻿@model IEnumerable<Controle_Estoque.Models.Produto>
+﻿
+@model IEnumerable<Controle_Estoque.Models.Produto>
 
 @{
     ViewData["Title"] = "Listar";
-    Layout = "_EstoqueLayout";
 }
-<header><h1 align="center">Produtos em estoque</h1></header>
+
+<header>
+    <h1 align="center">Produtos em estoque</h1>
+    <h2><a asp-controller="Estoque" asp-action="Adicionar">Adicionar Produto</a></h2>
+</header>
+
 <main>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>@Html.DisplayNameFor(model => model.Id)</th>
-                <th>@Html.DisplayNameFor(model => model.Nome)</th>
-                <th>@Html.DisplayNameFor(model => model.Quantidade)</th>
-                <th>@Html.DisplayNameFor(model => model.Preco)</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var item in Model)
-            {
+    <div class="table-wrapper">
+
+        <table class="table custom-table table-sm">
+
+            <thead>
                 <tr>
-                    <td>@Html.DisplayNameFor(model => item.Id)</td>
-                    <td>@Html.DisplayNameFor(model => item.Nome)</td>
-                    <td>@Html.DisplayNameFor(model => item.Quantidade)</td>
-                    <td>@Html.DisplayNameFor(model => item.Preco)</td>
+                    <th>@Html.DisplayNameFor(model => model.Id)</th>
+                    <th>@Html.DisplayNameFor(model => model.Nome)</th>
+                    <th>@Html.DisplayNameFor(model => model.Quantidade)</th>
+                    <th>@Html.DisplayNameFor(model => model.Preco)</th>
+                    <th>Ações</th>
                 </tr>
-            }
-        </tbody>
-    </table>
+            </thead>
+
+            <tbody>
+
+                @foreach (var item in Model)
+                {
+                    <tr>
+
+                        <td>@item.Id</td>
+
+                        <td>@item.Nome</td>
+
+                        <td>@item.Quantidade</td>
+
+                        <td>
+                            @(item.Preco.ToString(
+                                "C",
+                                System.Globalization.CultureInfo.GetCultureInfo("pt-BR")
+                            ))
+                        </td>
+
+                        <td>
+
+                            <a asp-controller="Estoque"
+                               asp-action="Editar"
+                               asp-route-id="@item.Id"
+                               class="editar">
+                                Editar
+                            </a>
+
+                            <a asp-controller="Estoque"
+                               asp-action="Deletar"
+                               asp-route-id="@item.Id"
+                               class="deletar">
+                                Deletar
+                            </a>
+
+                        </td>
+
+                    </tr>
+                }
+
+            </tbody>
+
+        </table>
+
+    </div>
 </main>

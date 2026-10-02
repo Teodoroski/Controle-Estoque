@@ -2,13 +2,12 @@
 
 @{
     ViewData["Title"] = "Adicionar Produto";
-    Layout = "_EstoqueLayout";
 }
 
 <h1>Adicionar produto</h1>
 
 <div>
-<form asp-action="AdicionarProduto" asp-controller="Estoque" method="POST">
+<form asp-action="Adicionar" asp-controller="Estoque" method="POST">
     <div>
         <label asp-for="Nome">Nome Produto:</label>
         <input asp-for="Nome" />

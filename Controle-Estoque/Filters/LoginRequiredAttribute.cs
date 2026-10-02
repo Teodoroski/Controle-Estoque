@@ -14,8 +14,14 @@ namespace Controle_Estoque.Filters
                 context.Result = new RedirectToActionResult(
                     "Login",
                     "Login",
-                    null);
+                    null
+                    );
+                return;
+
             }
+            Controller controller = (Controller)context.Controller;
+            controller.ViewBag.nome = nomeUsuario;
+
         }
     }
 }

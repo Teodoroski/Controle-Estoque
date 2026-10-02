@@ -37,8 +37,8 @@ namespace Controle_Estoque.Controllers
                 _context.SaveChanges();
                 return RedirectToAction("Listar");
             }
-            ViewBag.Error = "Tem que preencher corretamente as colunas";
-            return View();
+
+            return View(produto);
         }
 
         public IActionResult Editar(int id)
