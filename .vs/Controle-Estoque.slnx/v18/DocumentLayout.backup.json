@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "D:\\Visual-Studio-Projects\\source\\repos\\Controle-Estoque\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D0BD085D-11F4-5E4E-02B8-F6F808A3BAF8}|Controle-Estoque\\Controle-Estoque.csproj|d:\\visual-studio-projects\\source\\repos\\controle-estoque\\controle-estoque\\context\\estoquecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0BD085D-11F4-5E4E-02B8-F6F808A3BAF8}|Controle-Estoque\\Controle-Estoque.csproj|solutionrelative:controle-estoque\\context\\estoquecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D0BD085D-11F4-5E4E-02B8-F6F808A3BAF8}|Controle-Estoque\\Controle-Estoque.csproj|d:\\visual-studio-projects\\source\\repos\\controle-estoque\\controle-estoque\\controllers\\estoquecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0BD085D-11F4-5E4E-02B8-F6F808A3BAF8}|Controle-Estoque\\Controle-Estoque.csproj|solutionrelative:controle-estoque\\controllers\\estoquecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0BD085D-11F4-5E4E-02B8-F6F808A3BAF8}|Controle-Estoque\\Controle-Estoque.csproj|d:\\visual-studio-projects\\source\\repos\\controle-estoque\\controle-estoque\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0BD085D-11F4-5E4E-02B8-F6F808A3BAF8}|Controle-Estoque\\Controle-Estoque.csproj|solutionrelative:controle-estoque\\models\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D0BD085D-11F4-5E4E-02B8-F6F808A3BAF8}|Controle-Estoque\\Controle-Estoque.csproj|d:\\visual-studio-projects\\source\\repos\\controle-estoque\\controle-estoque\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0BD085D-11F4-5E4E-02B8-F6F808A3BAF8}|Controle-Estoque\\Controle-Estoque.csproj|solutionrelative:controle-estoque\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D0BD085D-11F4-5E4E-02B8-F6F808A3BAF8}|Controle-Estoque\\Controle-Estoque.csproj|d:\\visual-studio-projects\\source\\repos\\controle-estoque\\controle-estoque\\views\\estoque\\adicionar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D0BD085D-11F4-5E4E-02B8-F6F808A3BAF8}|Controle-Estoque\\Controle-Estoque.csproj|solutionrelative:controle-estoque\\views\\estoque\\adicionar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "EstoqueContext.cs",
-              "DocumentMoniker": "D:\\Visual-Studio-Projects\\source\\repos\\Controle-Estoque\\Controle-Estoque\\Context\\EstoqueContext.cs",
-              "RelativeDocumentMoniker": "Controle-Estoque\\Context\\EstoqueContext.cs",
-              "ToolTip": "D:\\Visual-Studio-Projects\\source\\repos\\Controle-Estoque\\Controle-Estoque\\Context\\EstoqueContext.cs",
-              "RelativeToolTip": "Controle-Estoque\\Context\\EstoqueContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-02T19:15:22.37Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Categoria.cs",
-              "DocumentMoniker": "D:\\Visual-Studio-Projects\\source\\repos\\Controle-Estoque\\Controle-Estoque\\Models\\Categoria.cs",
-              "RelativeDocumentMoniker": "Controle-Estoque\\Models\\Categoria.cs",
-              "ToolTip": "D:\\Visual-Studio-Projects\\source\\repos\\Controle-Estoque\\Controle-Estoque\\Models\\Categoria.cs",
-              "RelativeToolTip": "Controle-Estoque\\Models\\Categoria.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-02T19:14:42.416Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Produto.cs",
-              "DocumentMoniker": "D:\\Visual-Studio-Projects\\source\\repos\\Controle-Estoque\\Controle-Estoque\\Models\\Produto.cs",
-              "RelativeDocumentMoniker": "Controle-Estoque\\Models\\Produto.cs",
-              "ToolTip": "D:\\Visual-Studio-Projects\\source\\repos\\Controle-Estoque\\Controle-Estoque\\Models\\Produto.cs",
-              "RelativeToolTip": "Controle-Estoque\\Models\\Produto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Title": "Adicionar.cshtml",
+              "DocumentMoniker": "D:\\Visual-Studio-Projects\\source\\repos\\Controle-Estoque\\Controle-Estoque\\Views\\Estoque\\Adicionar.cshtml",
+              "RelativeDocumentMoniker": "Controle-Estoque\\Views\\Estoque\\Adicionar.cshtml",
+              "ToolTip": "D:\\Visual-Studio-Projects\\source\\repos\\Controle-Estoque\\Controle-Estoque\\Views\\Estoque\\Adicionar.cshtml",
+              "RelativeToolTip": "Controle-Estoque\\Views\\Estoque\\Adicionar.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-02T20:33:36.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "EstoqueController.cs",
+              "DocumentMoniker": "D:\\Visual-Studio-Projects\\source\\repos\\Controle-Estoque\\Controle-Estoque\\Controllers\\EstoqueController.cs",
+              "RelativeDocumentMoniker": "Controle-Estoque\\Controllers\\EstoqueController.cs",
+              "ToolTip": "D:\\Visual-Studio-Projects\\source\\repos\\Controle-Estoque\\Controle-Estoque\\Controllers\\EstoqueController.cs",
+              "RelativeToolTip": "Controle-Estoque\\Controllers\\EstoqueController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-02T19:11:38.66Z",
+              "WhenOpened": "2026-10-02T20:32:45.392Z",
               "EditorCaption": ""
             },
             {

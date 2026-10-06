@@ -2,6 +2,7 @@
 using Controle_Estoque.Filters;
 using Controle_Estoque.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 
 namespace Controle_Estoque.Controllers
@@ -15,16 +16,23 @@ namespace Controle_Estoque.Controllers
         {
             _context = context;
         }
+
+        // Listar os produtos
         [HttpGet]
         public IActionResult Listar()
         {
-            var produto = _context.Produtos.ToList();
+            var produto = _context.Produtos
+                .Include(p => p.Categoria)
+                .ToList();
+            
             return View(produto);
         }
 
+        // Adicionar produtos ao banco de dados
         [HttpGet]
         public IActionResult Adicionar()
         {
+            ViewBag.Categorias = _context.Categorias.ToList();
             return View();
         }
 
@@ -37,10 +45,12 @@ namespace Controle_Estoque.Controllers
                 _context.SaveChanges();
                 return RedirectToAction("Listar");
             }
+            ViewBag.Categorias = _context.Categorias.ToList();
 
             return View(produto);
         }
 
+        // Editar/Atualizar o Produto ja existente
         public IActionResult Editar(int id)
         {
             var produto = _context.Produtos.Find(id);
@@ -49,6 +59,7 @@ namespace Controle_Estoque.Controllers
             {
                 return NotFound();
             }
+            ViewBag.Categorias = _context.Categorias.ToList();
 
             return View(produto);
         }
@@ -60,11 +71,16 @@ namespace Controle_Estoque.Controllers
             {
                 _context.Produtos.Update(produto);
                 _context.SaveChanges();
+
                 return RedirectToAction("Listar");
             }
+
+            ViewBag.Categorias = _context.Categorias.ToList();
+
             return View(produto);
         }
 
+        // Deletar o Produto
         public IActionResult Deletar(int id)
         {
             var produto = _context.Produtos.Find(id);
