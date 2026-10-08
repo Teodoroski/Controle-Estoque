@@ -19,13 +19,27 @@ namespace Controle_Estoque.Controllers
 
         // Listar os produtos
         [HttpGet]
-        public IActionResult Listar()
+        public IActionResult Listar(string busca, int? categoriaId)
         {
-            var produto = _context.Produtos
+            var produtos = _context.Produtos
                 .Include(p => p.Categoria)
-                .ToList();
-            
-            return View(produto);
+                .AsQueryable();
+
+            // Buscar pelo Nome do produto
+            if (!string.IsNullOrEmpty(busca))
+            {
+                produtos = produtos.Where(p => p.Nome.Contains(busca));
+            }
+
+            // Buscar pela Categoria do produto
+            if (categoriaId.HasValue)
+            {
+                produtos = produtos.Where(p => p.CategoriaId == categoriaId.Value);
+            }
+
+            ViewBag.Categorias = _context.Categorias.ToList();
+
+            return View(produtos.ToList());
         }
 
         // Adicionar produtos ao banco de dados
@@ -39,15 +53,24 @@ namespace Controle_Estoque.Controllers
         [HttpPost]
         public IActionResult Adicionar(Produto produto)
         {
-            if (ModelState.IsValid)
-            {
-                _context.Produtos.Add(produto);
-                _context.SaveChanges();
-                return RedirectToAction("Listar");
-            }
             ViewBag.Categorias = _context.Categorias.ToList();
 
-            return View(produto);
+            if (!ModelState.IsValid)
+            {
+                foreach (var erro in ModelState)
+                {
+                    foreach (var mensagem in erro.Value.Errors)
+                    {
+                        Console.WriteLine($"{erro.Key}: {mensagem.ErrorMessage}");
+                    }
+                }
+
+                return View(produto);
+            }
+            _context.Produtos.Add(produto);
+            _context.SaveChanges();
+
+            return RedirectToAction("Listar");
         }
 
         // Editar/Atualizar o Produto ja existente

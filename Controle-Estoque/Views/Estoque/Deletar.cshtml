@@ -2,3 +2,10 @@
 @{
     ViewData["Title"] = "Deletar";
 }
+
+<h1>Você deseja realmente Deletar?</h1>
+<p>Ao deletar esse produto não será possivel reucuperar as informações</p>
+
+<button asp-action="Listar">Cancelar</button>
+
+<button asp-action="Deletar" type="submit">Deletar</button>

@@ -7,12 +7,45 @@
 
 <header>
     <h1 align="center">Produtos em estoque</h1>
-    <h2><a asp-controller="Estoque" asp-action="Adicionar">Adicionar Produto</a></h2>
+    
+    <form asp-controller="Estoque" asp-action="Listar" method="get">
+
+    <div>
+        <label>Produto</label>
+
+        <input type="text"
+               name="busca"
+               class="form-control"
+               placeholder="Digite o nome do produto" />
+    </div>
+
+    <div>
+        <label>Categoria</label>
+
+        <select name="categoriaId" class="form-control">
+
+            <option value="">Todas as categorias</option>
+
+            @foreach (var categoria in ViewBag.Categorias)
+            {
+                <option value="@categoria.Id">
+                    @categoria.Nome
+                </option>
+            }
+
+        </select>
+    </div>
+
+    <button type="submit" class="adicionar">
+        Buscar
+    </button>
+
+</form>
 </header>
 
 <main>
+    <h2><a asp-controller="Estoque" asp-action="Adicionar">Adicionar Produto</a></h2>
     <div class="table-wrapper">
-
         <table class="table custom-table table-sm">
 
             <thead>
@@ -52,7 +85,8 @@
                             <a asp-controller="Estoque"
                                asp-action="Deletar"
                                asp-route-id="@item.Id"
-                               class="deletar">
+                               class="deletar"
+                               onclick="return confirm('Tem certeza que deseja deletar o produto @item.Nome?');">
                                 Deletar
                             </a>
                         </td>
