@@ -1,0 +1,13 @@
+﻿@model Controle_Estoque.Models.Categoria;
+@{
+    ViewData["Title"] = "Adicionar Categoria";
+}
+
+<h1 align="center">Adicionar Nova Categoria</h1>
+
+<form asp-action="Adicionar" asp-controller="Categorias" method="post">
+    <label asp-for="Nome">Nome: </label>
+    <input asp-for="Nome"/>
+
+    <button type="submit">Adicionar</button>
+</form>
