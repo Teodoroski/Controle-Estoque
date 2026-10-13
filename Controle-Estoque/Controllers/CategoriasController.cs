@@ -33,7 +33,6 @@ namespace Controle_Estoque.Controllers
         {
             if (!ModelState.IsValid)
             {
-                return BadRequest(ModelState);
                 return View(categoria);
             }
             _context.Categorias.Add(categoria);
@@ -69,15 +68,14 @@ namespace Controle_Estoque.Controllers
             return View(categoria);
         }
 
-        [HttpDelete]
         public IActionResult Deletar(int id)
         {
-            var categoria = _context.Produtos.Find(id);
+            var categoria = _context.Categorias.Find(id);
             if (categoria == null)
             {
                 return NotFound();
             }
-            _context.Produtos.Remove(categoria);
+            _context.Categorias.Remove(categoria);
             _context.SaveChanges();
 
             return RedirectToAction("Listar");
