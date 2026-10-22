@@ -7,6 +7,13 @@
 
 <h1>Adicionar produto</h1>
 
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.Error
+    </div>
+}
+
 <div>
 <form asp-action="Adicionar" asp-controller="Estoque" method="POST">
     <div>

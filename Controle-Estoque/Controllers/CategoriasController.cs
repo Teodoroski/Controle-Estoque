@@ -31,10 +31,20 @@ namespace Controle_Estoque.Controllers
         [HttpPost]
         public IActionResult Adicionar(Categoria categoria)
         {
+            var verificarCategoriaExistente = _context.Categorias.Any(
+                c => categoria.Nome.ToUpper() == c.Nome.ToUpper());
+
             if (!ModelState.IsValid)
             {
                 return View(categoria);
             }
+
+            if (verificarCategoriaExistente == true)
+            {
+                ViewBag.Error = "Essa cateogira já está cadastrada!";
+                return View();
+            }
+
             _context.Categorias.Add(categoria);
             _context.SaveChanges();
 
@@ -68,13 +78,23 @@ namespace Controle_Estoque.Controllers
             return View(categoria);
         }
 
+        [HttpPost]
         public IActionResult Deletar(int id)
         {
             var categoria = _context.Categorias.Find(id);
+
+            var categoriaProduto = _context.Produtos.Any(p => p.CategoriaId == id);
             if (categoria == null)
             {
                 return NotFound();
             }
+
+            if (categoriaProduto == true)
+            {
+                TempData["Error"] = "Essa categoria está sendo utilizada.";
+                return RedirectToAction("Listar");
+            }
+
             _context.Categorias.Remove(categoria);
             _context.SaveChanges();
 

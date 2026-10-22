@@ -13,11 +13,13 @@ namespace Controle_Estoque.Controllers
         {
             _context = context;
         }
+
         [HttpGet]
         public IActionResult Login()
         {
             return View();
         }
+
         [HttpPost]
         public IActionResult Login(Usuario usuario)
         {
@@ -35,11 +37,13 @@ namespace Controle_Estoque.Controllers
 
             return RedirectToAction("Index", "Home");
         }
+
         [HttpGet]
         public IActionResult Cadastrar()
         {
             return View();
         }
+
         [HttpPost]
         public IActionResult Cadastrar(Usuario usuario)
         {
@@ -54,6 +58,13 @@ namespace Controle_Estoque.Controllers
             }
             ViewBag.Erro = "Tem que preencher os espaços vazios";
             return View();
+        }
+
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Clear(); 
+
+            return RedirectToAction("Login");
         }
     }
 }

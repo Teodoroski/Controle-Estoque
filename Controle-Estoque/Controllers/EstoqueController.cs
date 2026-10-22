@@ -54,6 +54,8 @@ namespace Controle_Estoque.Controllers
         public IActionResult Adicionar(Produto produto)
         {
             ViewBag.Categorias = _context.Categorias.ToList();
+            var verificarProdutoExistente = _context.Produtos.Any(
+                p => produto.Nome.ToUpper() == p.Nome.ToUpper());
 
             if (!ModelState.IsValid)
             {
@@ -66,6 +68,12 @@ namespace Controle_Estoque.Controllers
                 }
 
                 return View(produto);
+            }
+
+            if (verificarProdutoExistente == true)
+            {
+                ViewBag.Error = "Esse produto já está em estoque!";
+                return View();
             }
             _context.Produtos.Add(produto);
             _context.SaveChanges();

@@ -6,6 +6,15 @@
     <h1 align="center">Categorias</h1>
 </header>
 <main>
+
+    <!-- A mensagem de erro fica aqui -->
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger">
+            @TempData["Error"]
+        </div>
+    }
+
     <h2><a asp-action="Adicionar" asp-controller="Categorias">Adicionar nova categoria</a></h2>
 
     <div class="table-wrapper">
@@ -28,12 +37,16 @@
                                asp-route-id="@item.Id"
                                class="editar">Editar</a>
 
-                            <a asp-action="Deletar"
-                                asp-controller="Categorias"
-                                asp-route-id="@item.Id"
-                                class="deletar"
-                                onclick="return confirm('Tem certeza que deseja deletar o produto @item.Nome?');">
-                                Deletar</a>
+                            <form asp-action="Deletar"
+                                  asp-controller="Categorias"
+                                  asp-route-id="@item.Id"
+                                  method="post"
+                                  onsubmit="return confirm('Tem certeza que deseja deletar a categoria @item.Nome?');">
+
+                                <button type="submit" class="deletar">
+                                    Deletar
+                                </button>
+                            </form>
                         </td> 
                     </tr>
                 }
