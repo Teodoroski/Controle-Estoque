@@ -1,5 +1,6 @@
 ﻿using Controle_Estoque.Context;
 using Controle_Estoque.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 
@@ -23,16 +24,31 @@ namespace Controle_Estoque.Controllers
         [HttpPost]
         public IActionResult Login(Usuario usuario)
         {
-            // Procura o Nome e Senha do Usuário
-            var usuarioBanco = _context.Usuarios.FirstOrDefault(
-                u => u.Nome == usuario.Nome && u.Senha == usuario.Senha);
+            var hasher = new PasswordHasher<Usuario>();
 
-            // Verifica se existe
+            // Buscar o nome do usuario
+            var usuarioBanco = _context.Usuarios.FirstOrDefault(
+                u => usuario.Nome == u.Nome);
+
+            // Verifica se o nome do usuário existe
             if (usuarioBanco == null)
             {
-                ViewBag.Erro = "Usuário ou senha incorretos";
+                ViewBag.Error = "Usuário ou senha incorretos";
                 return View();
             }
+
+            var resultado = hasher.VerifyHashedPassword(
+                usuarioBanco, // Usuario encontrado no banco de dados
+                usuarioBanco.Senha, // o hash (senha criptografada) armazenada 
+                usuario.Senha); // Senha informada no formulário     
+
+            // Verifica se a senha digitada é a correta
+            if (resultado == PasswordVerificationResult.Failed)
+            {
+                ViewBag.Error = "Usuário ou senha incorretos";
+                return View();
+            }
+
             HttpContext.Session.SetString("NomeUsuario", usuario.Nome);
 
             return RedirectToAction("Index", "Home");
@@ -49,14 +65,29 @@ namespace Controle_Estoque.Controllers
         {
             if (ModelState.IsValid)
             {
-                // Adicionando ao Banco de dados
+                // Verifica se o usuário já existe no banco
+                var usuarioExistente = _context.Usuarios.Any(
+                u => usuario.Nome.ToUpper() == u.Nome.ToUpper() || usuario.Email.ToUpper() == u.Email.ToUpper());
+
+                if (usuarioExistente == true)
+                {
+                    ViewBag.Error = "Usuario já está cadastrado com esse nome ou email!";
+                    return View();
+                }
+
+                // Cria um hasher para criptografar a senha criada
+                var hasher = new PasswordHasher<Usuario>();
+                usuario.Senha = hasher.HashPassword(usuario, usuario.Senha);
+
+                // Adiciona ao Banco de dados
                 _context.Usuarios.Add(usuario);
-                // Salvando as alterações
+                // Salva no banco de dados
                 _context.SaveChanges();
                 // Retornando a página de Login
                 return RedirectToAction(nameof(Login));
             }
-            ViewBag.Erro = "Tem que preencher os espaços vazios";
+
+            ViewBag.Error = "Tem que preencher os espaços vazios!";
             return View();
         }
 
