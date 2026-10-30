@@ -21,7 +21,6 @@
 
     <div>
         <label>Categoria</label>
-
         <select name="categoriaId" class="form-control">
 
             <option value="">Todas as categorias</option>
@@ -32,19 +31,34 @@
                     @categoria.Nome
                 </option>
             }
-
         </select>
     </div>
-
     <button type="submit" class="adicionar">
         Buscar
     </button>
-
 </form>
 </header>
-
 <main>
     <h2><a asp-controller="Estoque" asp-action="Adicionar">Adicionar Produto</a></h2>
+
+    @{
+      var produtoEstoqueBaixo = Model.Count(model => model.Quantidade <= 5);
+    }
+
+   @* Alerta de quantidade de produto com estoque baixo *@ 
+   @if (produtoEstoqueBaixo > 0)
+    {
+        <div class="alerta-estoque alerta-baixo">
+            <strong>Atenção!</strong>
+            Existem @produtoEstoqueBaixo produtos com estoque baixo.
+        </div>
+    } else {
+        <div class="alerta-estoque alerta-normal">
+            <strong>Tudo certo!</strong>
+            O estoque está normal.
+        </div>
+    }
+
     <div class="table-wrapper">
         <table class="table custom-table table-sm">
 
@@ -90,6 +104,13 @@
                                 Deletar
                             </a>
                         </td>
+                       @if (item.Quantidade <= 5)
+                        {
+                           <td class="alerta-baixo">ESTOQUE BAXIO</td>
+                        } else
+                        {
+                           <td class="alerta-normal">ESTOQUE NORMAL</td>
+                        }
                     </tr>
                 }
             </tbody>

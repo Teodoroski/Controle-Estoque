@@ -280,8 +280,35 @@ body {
 
 
 /* ================================================= */
+/* ALERTA DE ESTOQUE BAIXO
+/* ================================================= */
+
+.alerta-estoque {
+    display: inline-block;
+    padding: 15px 22px;
+    margin: 15px 0;
+    border-radius: 8px;
+    border: 1px solid;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.alerta-baixo {
+    color: #842029;
+    background-color: #f8d7da;
+    border-color: #f5c2c7;
+}
+
+.alerta-normal {
+    color: #0f5132;
+    background-color: #d1e7dd;
+    border-color: #badbcc;
+}
+
+/* ================================================= */
 /* TABELAS - Estoque/Listar */
 /* ================================================= */
+
 
 .table-wrapper {
     display: flex;
@@ -312,6 +339,18 @@ body {
         background-color: #f8f9fa;
     }
 
+    .custom-table .alerta-baixo {
+        color: #842029;
+        background-color: #f8d7da;
+        border-color: #f5c2c7;
+    }
+
+    .custom-table .alerta-normal {
+        color: #0f5132;
+        background-color: #d1e7dd;
+        border-color: #badbcc;
+    }
+
 
     /* ================================================= */
     /* BOTÕES DENTRO DA TABELA */
@@ -328,8 +367,6 @@ body {
         font-size: 14px;
         font-weight: 600;
     }
-
-
 /* ================================================= */
 /* BARRA DE ROLAGEM */
 /* ================================================= */
