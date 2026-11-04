@@ -1,4 +1,105 @@
 ﻿```css
+
+/* Área dos indicadores */
+.dashboard-cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 35px auto;
+    flex-wrap: wrap;
+}
+
+/* Estilo geral dos cartões */
+
+.dashboard-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    margin: 35px auto;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+/* Cartões */
+.dashboard-card {
+    flex: 1;
+    max-width: 280px;
+    min-width: 0;
+    min-height: 140px;
+    padding: 25px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.10);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+    .dashboard-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Títulos */
+    .dashboard-card h3 {
+        font-size: 17px;
+        margin: 0;
+        font-weight: 600;
+    }
+
+    /* Números */
+    .dashboard-card p {
+        font-size: 32px;
+        font-weight: bold;
+        margin: 0;
+    }
+
+/* Cores */
+.card-produtos {
+    background-color: #e3f2fd;
+    color: #1565c0;
+    border-left: 5px solid #1565c0;
+}
+
+.card-unidades {
+    background-color: #ede7f6;
+    color: #6a1b9a;
+    border-left: 5px solid #6a1b9a;
+}
+
+.card-baixo {
+    background-color: #ffebee;
+    color: #c62828;
+    border-left: 5px solid #c62828;
+}
+
+
+/* Cartão de produtos */
+.card-produtos {
+    background-color: #e3f2fd;
+    color: #1565c0;
+    border-left: 5px solid #1565c0;
+}
+
+/* Cartão de unidades */
+.card-unidades {
+    background-color: #ede7f6;
+    color: #6a1b9a;
+    border-left: 5px solid #6a1b9a;
+}
+
+/* Cartão de estoque baixo */
+.card-baixo {
+    background-color: #ffebee;
+    color: #c62828;
+    border-left: 5px solid #c62828;
+}
+
 /* ================================================= */
 /* CONFIGURAÇÕES GERAIS */
 /* ================================================= */

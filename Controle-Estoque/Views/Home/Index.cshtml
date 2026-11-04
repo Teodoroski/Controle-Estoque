@@ -1,4 +1,5 @@
-﻿@{
+﻿@model IEnumerable<Controle_Estoque.Models.Produto>
+@{
     ViewData["Title"] = "Início";
 }
 
@@ -8,3 +9,30 @@
 
 <h2><a asp-action="Listar" asp-controller="Categorias">Gerenciar Categorias</a></h2>
 
+<div class="dashboard-cards">
+
+    <a asp-controller="Estoque"
+       asp-action="Listar"
+       class="dashboard-card card-produtos">
+
+        <h3>Produtos cadastrados</h3>
+        <p>@ViewBag.Quant</p>
+    </a>
+    
+    <a asp-controller="Estoque" 
+       asp-action="Listar"
+       class="dashboard-card card-unidades">
+
+        <h3>Unidades em estoque</h3>
+        <p>@ViewBag.Unid</p>
+    </a>
+
+    <a asp-controller="Estoque" 
+       asp-action="Listar"
+       asp-route-estoqueBaixo="true"
+       class="dashboard-card card-baixo">
+
+        <h3>Estoque baixo</h3>
+        <p>@ViewBag.Baixo</p>
+    </a>
+</div>

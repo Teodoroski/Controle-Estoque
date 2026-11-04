@@ -19,19 +19,25 @@ namespace Controle_Estoque.Controllers
 
         // Listar os produtos
         [HttpGet]
-        public IActionResult Listar(string busca, int? categoriaId)
+        public IActionResult Listar(string busca, int? categoriaId, bool estoqueBaixo = false)
         {
             var produtos = _context.Produtos
                 .Include(p => p.Categoria)
                 .AsQueryable();
 
-            // Buscar pelo Nome do produto
+            // Recebe o parâmetro da dashboard de "estoqueBaixo" e faz essa pesquisa e retorna ela.
+            if(estoqueBaixo == true)
+            {
+                produtos = produtos.Where(p => p.Quantidade <= 5);
+            }
+
+            // Buscar pelo Nome do produto enviado no formulário
             if (!string.IsNullOrEmpty(busca))
             {
                 produtos = produtos.Where(p => p.Nome.Contains(busca));
             }
 
-            // Buscar pela Categoria do produto
+            // Buscar pela Categoria do produto enviado pelo formulário
             if (categoriaId.HasValue)
             {
                 produtos = produtos.Where(p => p.CategoriaId == categoriaId.Value);
