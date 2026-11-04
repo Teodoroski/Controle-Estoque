@@ -1,0 +1,9 @@
+﻿# Visual Studio
+.vs/
+**/.vs/
+
+# Compilação
+bin/
+obj/
+**/bin/
+**/obj/
