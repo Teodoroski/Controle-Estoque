@@ -39,7 +39,7 @@
 </form>
 </header>
 <main>
-    <h2><a asp-controller="Estoque" asp-action="Adicionar">Adicionar Produto</a></h2>
+    <h2><a asp-controller="Estoque" asp-action="Adicionar" class="adicionar">Adicionar Produto</a></h2>
 
     @{
       var produtoEstoqueBaixo = Model.Count(model => model.Quantidade <= 5);

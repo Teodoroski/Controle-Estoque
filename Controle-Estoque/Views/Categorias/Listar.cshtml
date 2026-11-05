@@ -15,7 +15,7 @@
         </div>
     }
 
-    <h2><a asp-action="Adicionar" asp-controller="Categorias">Adicionar nova categoria</a></h2>
+    <h2><a asp-action="Adicionar" asp-controller="Categorias" class="adicionar">Adicionar nova categoria</a></h2>
 
     <div class="table-wrapper">
     <table class="table custom-table table-sm">
@@ -32,21 +32,22 @@
                     <tr>
                         <td>@item.Id</td>
                         <td>@item.Nome</td>
-                        <td><a asp-action="Editar"
-                               asp-controller="Categorias"
-                               asp-route-id="@item.Id"
-                               class="editar">Editar</a>
+                        <td>
+                            <div class="acoes-categoria">
+                                <a asp-action="Editar" 
+                                asp-controller="Categorias" 
+                                asp-route-id="@item.Id" 
+                                class="editar">Editar</a>
 
-                            <form asp-action="Deletar"
-                                  asp-controller="Categorias"
-                                  asp-route-id="@item.Id"
-                                  method="post"
-                                  onsubmit="return confirm('Tem certeza que deseja deletar a categoria @item.Nome?');">
+                                <form asp-action="Deletar" 
+                                asp-controller="Categorias" 
+                                asp-route-id="@item.Id"
+                                method="post"
+                                    onsubmit="return confirm('Tem certeza que deseja deletar a categoria @item.Nome?');">
 
-                                <button type="submit" class="deletar">
-                                    Deletar
-                                </button>
-                            </form>
+                                    <button type="submit" class="deletar">Deletar</button>
+                                </form>
+                            </div>
                         </td> 
                     </tr>
                 }

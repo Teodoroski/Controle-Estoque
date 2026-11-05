@@ -436,7 +436,7 @@ body {
 
     .custom-table td {
         font-style: italic;
-        padding: 6px 8px;
+        padding: 3px 10px;
         background-color: #ffffff;
     }
 
@@ -474,6 +474,48 @@ body {
         font-size: 14px;
         font-weight: 600;
     }
+
+
+/* Alinhamento dos botões de ação */
+.acoes-categoria {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    white-space: nowrap;
+}
+
+    /* Remove margens do formulário */
+    .acoes-categoria form {
+        margin: 0;
+    }
+
+    /* Botões */
+    .acoes-categoria .btn-editar,
+    .acoes-categoria .btn-deletar {
+        display: inline-block;
+        padding: 7px 12px;
+        border-radius: 7px;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    /* Editar */
+    .acoes-categoria .btn-editar {
+        background-color: #fff8e1;
+        color: #a66b00;
+        border: 1px solid #ffda70;
+    }
+
+    /* Deletar */
+    .acoes-categoria .btn-deletar {
+        background-color: #fff1f2;
+        color: #dc3545;
+        border: 1px solid #ffb3bd;
+    }
+
 /* ================================================= */
 /* BARRA DE ROLAGEM */
 /* ================================================= */
