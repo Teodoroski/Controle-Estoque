@@ -23,10 +23,12 @@ namespace Controle_Estoque.Controllers
             int quantidadeProduto = _context.Produtos.Count();
             int quantidadeUnidade = _context.Produtos.Sum(q => q.Quantidade);
             int quantidadeEstoqueBaixo = _context.Produtos.Count(q => q.Quantidade <= 5);
+            double valorTotalEstoque = _context.Produtos.Sum(v => v.Preco * v.Quantidade);
 
             ViewBag.Quant = quantidadeProduto;
             ViewBag.Unid = quantidadeUnidade;
             ViewBag.Baixo = quantidadeEstoqueBaixo;
+            ViewBag.VTotal = valorTotalEstoque;
             return View();
         }
 

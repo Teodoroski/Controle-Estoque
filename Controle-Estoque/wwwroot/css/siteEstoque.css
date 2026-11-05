@@ -25,7 +25,7 @@
 /*  Cartões */
 .dashboard-card {
     flex: 1;
-    max-width: 280px;
+    max-width: 310px;
     min-width: 0;
     min-height: 140px;
     padding: 25px;
@@ -76,6 +76,12 @@
     background-color: #ffebee;
     color: #c62828;
     border-left: 5px solid #c62828;
+}
+
+.card-total-estoque {
+    background-color: #ddf6cc;
+    color: #1a7c02;
+    border-left: 5px solid #1a7c02;
 }
 
 

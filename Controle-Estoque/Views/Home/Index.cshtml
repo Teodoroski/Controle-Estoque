@@ -36,3 +36,15 @@
         <p>@ViewBag.Baixo</p>
     </a>
 </div>
+
+<div class="dashboard-cards">
+    <div class="dashboard-card card-total-estoque">
+        <h3>Valor total do estoque:</h3>
+        <p>
+            @String.Format(
+            System.Globalization.CultureInfo.GetCultureInfo("pt-BR"),
+        "{0:C}",
+        ViewBag.VTotal)
+        </p>
+    </div>
+</div>
